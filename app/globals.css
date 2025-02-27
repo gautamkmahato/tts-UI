@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #090932;
+  --foreground: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* @keyframes wave {
+  0%,
+  100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(2);
+  }
+} */
+
+.animate-wave div {
+  animation: wave 1.5s infinite ease-in-out;
+}
+
+/* @keyframes moveLine {
+  0% {
+    transform: translateY(0) rotate(0);
+    opacity: 0.2;
+  }
+  50% {
+    transform: translateY(-50vh) rotate(180deg);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-100vh) rotate(360deg);
+    opacity: 0.2;
+  }
+} */
+
+@keyframes equalizer {
+  0%, 100% {
+    height: 20%;
+  }
+  50% {
+    height: 80%;
+  }
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(1.5);
+  }
+}
+
+.animate-wave div {
+  animation: wave 1.5s infinite ease-in-out;
+}
+
+@keyframes moveLine {
+  0% {
+    transform: translateY(0) rotate(0);
+    opacity: 0.2;
+  }
+  50% {
+    transform: translateY(-50vh) rotate(180deg);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0) rotate(360deg);
+    opacity: 0.2;
+  }
+}
+
+
